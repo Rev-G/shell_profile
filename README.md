@@ -13,8 +13,21 @@ This profile applies only to the current user, but affects all shells.
 
 Currently requires colortool and dracula powershell theme
 
-dracula powerhell theme
+dracula powerhell theme (only need the iterm color file
 https://github.com/dracula/powershell
 
 colortool
 https://github.com/Microsoft/Terminal/tree/master/src/tools/ColorTool
+
+# ZSH
+
+install oh my zsh
+
+https://ohmyz.sh/
+
+
+follow basic install instructions
+
+https://github.com/ohmyzsh/ohmyzsh/
+
+copy .zshrc file if desired
