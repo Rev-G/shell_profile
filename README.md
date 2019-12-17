@@ -26,6 +26,18 @@ https://github.com/dracula/powershell
 
 https://github.com/dracula/powershell/blob/master/theme/Dracula-ColorTool.itermcolors
 
+### Git
+need to look at posh-git
+
+https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
+
+https://github.com/dahlbyk/posh-git
+
+### Maybe?
+oh my posh
+
+https://github.com/JanDeDobbeleer/oh-my-posh
+
 
 
 # ZSH
