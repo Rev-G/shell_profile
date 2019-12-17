@@ -11,13 +11,22 @@ This profile applies to all users and all shells.
 %UserProfile%\Documents\WindowsPowerShell\profile.ps1 
 This profile applies only to the current user, but affects all shells.
 
-Currently requires colortool and dracula powershell theme
+Requires colortool and dracula powershell theme
 
-dracula powerhell theme (only need the iterm color file
+### color tool
+colortool (only really need the colortool release) - link on the page.
+https://github.com/Microsoft/Terminal/tree/master/src/tools/ColorTool
+
+### theme
+dracula powerhell theme (only need the iterm color file)
+
+place .itermcolors file inside colortool themes 
+
 https://github.com/dracula/powershell
 
-colortool
-https://github.com/Microsoft/Terminal/tree/master/src/tools/ColorTool
+https://github.com/dracula/powershell/blob/master/theme/Dracula-ColorTool.itermcolors
+
+
 
 # ZSH
 
