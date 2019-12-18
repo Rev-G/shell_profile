@@ -3,6 +3,18 @@ function Test-Administrator {
     (New-Object Security.Principal.WindowsPrincipal $user).IsInRole([Security.Principal.WindowsBuiltinRole]::Administrator)
 }
 
+function Set-PathView 
+{
+    if ((Get-Location).path -eq ($env:USERPROFILE))
+    {
+        return "~"
+    }
+    else 
+    {
+        return "$(split-path $pwd -leaf)"
+    }
+}
+
 function prompt
 {
     #test if the last command was successful or not
@@ -21,8 +33,7 @@ function prompt
         Write-Host "(ELEVATED) " -NoNewline -ForegroundColor White
     }
 
-    Write-Host "[$(split-path $pwd -leaf)]" -NoNewline -ForegroundColor Cyan
-    Write-Host ">" -NoNewline -ForegroundColor Cyan
+    Write-Host " $(Set-PathView) " -NoNewline -ForegroundColor Cyan
 
     Return " "
 }
