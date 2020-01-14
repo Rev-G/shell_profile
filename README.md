@@ -2,7 +2,8 @@
 shell profile configs
 
 # Powershell
-## Windows
+_Windows setup_
+
 %windir%\system32\WindowsPowerShell\v1.0\profile.ps1 
 This profile applies to all users and all shells.
 
@@ -13,6 +14,23 @@ This profile applies only to the current user, but affects all shells.
 
 Requires colortool and dracula powershell theme
 
+Verify profile path
+
+```$profile```
+
+Profile structure should look something like this
+
+```
+%UserProfile%\Documents\WindowsPowerShell
+|--ColorTool
+    |--schemes
+        |--Dracula-Color.itermcolors
+        |--othercolorfiles.itermcolors
+    |--ColorTool.exe
+|--Profile.ps1
+  
+
+```
 ### color tool
 colortool (only really need the colortool release) - link on the page.
 https://github.com/Microsoft/Terminal/tree/master/src/tools/ColorTool
@@ -26,20 +44,6 @@ https://github.com/dracula/powershell
 
 https://github.com/dracula/powershell/blob/master/theme/Dracula-ColorTool.itermcolors
 
-### Git
-need to look at posh-git
-
-https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
-
-https://github.com/dahlbyk/posh-git
-
-### Maybe?
-oh my posh
-
-https://github.com/JanDeDobbeleer/oh-my-posh
-
-
-
 # ZSH
 
 install oh my zsh
@@ -52,3 +56,16 @@ follow basic install instructions
 https://github.com/ohmyzsh/ohmyzsh/
 
 copy .zshrc file if desired
+
+## ?? Future things to look at ?? 
+### Git
+need to look at posh-git
+
+https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
+
+https://github.com/dahlbyk/posh-git
+
+### Maybe?
+oh my posh
+
+https://github.com/JanDeDobbeleer/oh-my-posh
