@@ -1,0 +1,19 @@
+### VisualStudioCode ###
+.vscode/*
+
+### Packer ###
+packer_cache/*
+
+### MACOS ###
+.DS_Store
+
+### VMWare ###
+*.vmdk
+*.nvram
+*.plist
+*.vmsd
+*.vmx
+*.vmxf
+*.log
+*.lck
+*.vmem
