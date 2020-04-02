@@ -36,6 +36,8 @@ colortool (only really need the colortool release) - link on the page.
 https://github.com/Microsoft/Terminal/tree/master/src/tools/ColorTool
 
 ### theme
+_note needs to be set in the terminal preferences_
+
 dracula powerhell theme (only need the iterm color file)
 
 place .itermcolors file inside colortool themes 
@@ -43,6 +45,13 @@ place .itermcolors file inside colortool themes
 https://github.com/dracula/powershell
 
 https://github.com/dracula/powershell/blob/master/theme/Dracula-ColorTool.itermcolors
+
+### font
+_note needs to be set in the terminal preferences_
+
+using cascadia code
+
+https://github.com/microsoft/cascadia-code
 
 # ZSH
 
