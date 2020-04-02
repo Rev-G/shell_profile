@@ -5,13 +5,17 @@ function Test-Administrator {
 
 function Set-PathView 
 {
-    if ((Get-Location).path -eq ($env:USERPROFILE))
+    if ((Get-Location).ProviderPath -eq ($env:USERPROFILE))
     {
         return "~"
     }
+    elseif (((Get-Location).ProviderPath).Substring(0,2) -eq "\\")
+    {
+        return "$($(Get-Location).ProviderPath)"
+    }
     else 
     {
-        return "$(split-path $pwd -leaf)"
+        return "$(Split-Path $(Get-Location).ProviderPath -leaf)"
     }
 }
 
