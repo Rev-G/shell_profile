@@ -4,6 +4,8 @@ shell profile configs
 # Powershell
 _Windows setup_
 
+NOTE: THIS IS ALL DIFFERENT NOW WITH WINDOWS TERMINAL
+
 %windir%\system32\WindowsPowerShell\v1.0\profile.ps1 
 This profile applies to all users and all shells.
 
@@ -55,32 +57,4 @@ https://github.com/microsoft/cascadia-code
 
 # ZSH
 
-install oh my zsh
-
-https://ohmyz.sh/
-
-
-follow basic install instructions
-
-https://github.com/ohmyzsh/ohmyzsh/
-
-plugins for zsh
-
-git clone https://github.com/zsh-users/zsh-autosuggestions.git $ZSH_CUSTOM/plugins/zsh-autosuggestions
-
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git $ZSH_CUSTOM/plugins/zsh-syntax-highlighting
-
-copy .zshrc file if desired
-
-## ?? Future things to look at ?? 
-### Git
-need to look at posh-git
-
-https://git-scm.com/book/en/v2/Appendix-A%3A-Git-in-Other-Environments-Git-in-PowerShell
-
-https://github.com/dahlbyk/posh-git
-
-### Maybe?
-oh my posh
-
-https://github.com/JanDeDobbeleer/oh-my-posh
+copy .zprofile in to $HOME
